@@ -1,43 +1,28 @@
-import { useState } from 'react'
-
-
-import './App.css'
+import Education from "./components/Education";
+import Home from "./components/Home";
+import Interests from "./components/interests";
+import Projects from "./components/Projects";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="parent">
-        <div className="header">
-            <div className="title">
-              JT.
-            </div>
-            <nav className="navbar">
-              <a>Home</a>
-              <a>Education</a>
-              <a>Projects</a>
-              <a>Other Interests</a>   
-            </nav>
-            
-        </div>
-        <div className="content">
-              <div className="txt">
-                  <div className="txt1">Hi There!</div>
-                  <div className="txt2">I'm a Developer</div>
-                  <div className="txt3">&lt;  Code, Coffee & Creativity /&gt;</div>
-                  
-                  <button>Contact me</button>
-              </div>
-                <div className="photo">
-                <img src="/images/background_sm.png"></img>
-                </div>
-              
-              
-              
-        </div>
+    <div className="parent bg-gray-950">
+      <div className="header">
+        <div className="title">JT.</div>
+        <nav className="navbar">
+          <a>Home</a>
+          <a>Education</a>
+          <a>Projects</a>
+          <a>Other Interests</a>
+        </nav>
+      </div>
+      <div>
+        <Home />
+        <Education></Education>
+        <Projects></Projects>
+        <Interests></Interests>
+      </div>
     </div>
-    
-  )
+  );
 }
 
-export default App
+export default App;
