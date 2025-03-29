@@ -1,13 +1,3 @@
-
 export default function Education() {
- 
-
-  return (
-    <div>
-        Hii
-    </div>
-    
-  )
+  return <div></div>;
 }
-
-

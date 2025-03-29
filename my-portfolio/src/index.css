@@ -1,3 +1,60 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: port;
+  src: url("../font/PortLligatSlab-Regular.ttf");
+}
 
+.port-font {
+  font-family: port;
+}
+
+@font-face {
+  font-family: mono;
+  src: url("../font/PTMono-Regular.ttf");
+}
+.mono-font {
+  font-family: mono;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../font/Poppins-Bold.ttf");
+}
+
+.poppins-bold {
+  font-family: poppins;
+}
+
+#btn1::after {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #d88995;
+  transform: translateX(-100%);
+  transition: all 300ms ease-in-out;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#btn1:hover::after {
+  transform: translateX(0%);
+}
+
+.navlink::after {
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background: #d88995;
+  bottom: -2px;
+  content: "";
+  left: 0;
+  border-radius: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.navlink:hover::after {
+  width: 100%;
+}
